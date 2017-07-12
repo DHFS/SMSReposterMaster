@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292f45"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="120dp"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textColor="#FFFEFF"
+        android:textSize="19sp"
+        android:background="@drawable/edittext_selected"
+        android:id="@+id/et_destination_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号码"
+        android:textColorHint="@android:color/white"
+         />
+
+    <LinearLayout
+
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_destination_number"
+        android:orientation="horizontal"
+        android:id="@+id/ll_btn">
+
+        <Button
+            android:elevation="15dp"
+            android:id="@+id/btn_start_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_destination_number"
+            android:layout_weight="1"
+            android:background="@drawable/btn_start_selector"
+            android:textColor="@android:color/white"
+            android:text="开启服务"
+            />
+
+
+
+        <Button
+            android:background="@drawable/btn_stop_selector"
+            android:id="@+id/btn_stop_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_start_service"
+            android:layout_weight="1"
+            android:text="关闭服务"
+            android:textColor="@android:color/white"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        fab:fab_labelStyle="@style/fab_labels_style"
+        >
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#E64C66"
+            fab:fab_icon="@drawable/settings"
+            fab:fab_colorPressed="@color/colorAccent"
+            fab:fab_title="设置"
+
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/help1"
+            fab:fab_colorNormal="#10A8AB"
+            fab:fab_colorPressed="#14c297"
+            fab:fab_title="帮助"
+
+            android:layout_alignParentRight="true"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/cellphone"
+            fab:fab_colorNormal="#FBB150"
+            fab:fab_colorPressed="#f2c270"
+            fab:fab_title="电话"
+            android:layout_alignParentRight="true"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    <TextView
+
+        android:drawablePadding="5dp"
+        android:maxLines="1"
+
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/shouji"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本机号码："
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/swt_calling" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:drawablePadding="5dp"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/detail2"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tv_detail2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="接收号码："
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/tv_detail" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:drawablePadding="5dp"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/status"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tv_detail3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="服务状态："
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/tv_detail2" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:drawablePadding="5dp"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/statistics"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tv_detail4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="统计："
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/tv_detail3" />
+
+    <Switch
+        android:checked="false"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/stattion"
+        android:layout_marginLeft="20dp"
+        android:switchPadding="58dp"
+        android:textColor="@android:color/white"
+        android:text="来电转移"
+        android:id="@+id/swt_calling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_btn"
+
+         />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292f45"
+    >
+    <android.support.v7.widget.Toolbar
+
+        android:layout_gravity="center"
+        android:title="设置"
+        android:titleTextColor="@android:color/white"
+        android:id="@+id/tb_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        >
+
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_below="@id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+            android:layout_centerInParent="true"
+            android:text="发送端"
+            android:id="@+id/btn_master"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_centerInParent="true"
+            android:layout_below="@id/btn_master"
+            android:text="接收端"
+            android:id="@+id/btn_receiver"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <Button
+
+            android:layout_centerInParent="true"
+            android:layout_below="@id/btn_receiver"
+            android:text="权限设置"
+            android:id="@+id/btn_permission_setting"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_clean_statistics"
+        android:layout_centerInParent="true"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="重置统计"
+
+
+        />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292f45"
+    >
+    <android.support.v7.widget.Toolbar
+
+        android:title="帮助"
+        android:titleTextColor="@android:color/white"
+        android:id="@+id/tb_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingLeft="15dp"
+        android:paddingTop="35dp"
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用说明："
+        android:textColor="@android:color/white"
+        />
+    <TextView
+        android:padding="15dp"
+        android:id="@+id/tv2"
+        android:layout_below="@id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.为了保证短信转发服务质量的稳定性与可靠性，请点击本页面的“权限设置”按钮，并在弹出的权限管理选项中将权限设置为“允许”状态。"
+        android:textColor="@android:color/white"
+        />
+    <TextView
+        android:padding="15dp"
+        android:layout_below="@id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv3"
+        android:text="2.由于系统自带后台清理功能，为了保证应用后台运行期间不被系统杀死，请确保应用处于后台锁定状态，如MIUI系统需要单击菜单键，按住本应用并向下滑动，直至应用右上角出现上锁标志。"
+
+        />
+
+
+    <TextView
+
+        android:padding="15dp"
+        android:layout_below="@id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv4"
+        android:text="3.请选择发送端和接收端。（功能未开通，第一次使用请选择发送端，即默认将本机短信发送到指定号码）"
+
+        />
+
+    <TextView
+
+        android:padding="15dp"
+        android:layout_below="@id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv5"
+        android:text="4.问题反馈QQ和微信：340250808"
+
+        />
+
+
+</LinearLayout>
